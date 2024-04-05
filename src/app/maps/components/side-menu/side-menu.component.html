@@ -1,10 +1,10 @@
 
-<ul class="fixed top-5 left-5 w-44 divide-y border rounded-md overflow-hidden bg-slate-100">
+<ul class="fixed z-50 top-5 left-5 w-44 divide-y border rounded-md overflow-hidden bg-gray-800/20 backdrop-blur-sm">
   <li
     *ngFor="let item of menuItems"
     [routerLink]="[ item.route ]"
     routerLinkActive="active"
-    class="font-medium px-4 py-2 flex gap-4 cursor-pointer transition-all hover:bg-blue-600 hover:text-white">
+    class="font-medium px-4 py-2 flex gap-4 cursor-pointer transition-all hover:bg-blue-700/80 hover:text-white">
     <img [src]="item.icon" [alt]="item.alt">
     {{ item.name }}
   </li>

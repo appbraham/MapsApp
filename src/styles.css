@@ -5,6 +5,6 @@
 
 @layer components{
   .active{
-    @apply text-white bg-blue-600;
+    @apply text-white bg-blue-700/80;
   }
 }
