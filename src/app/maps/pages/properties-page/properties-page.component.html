@@ -1,1 +1,19 @@
-<p>properties-page works!</p>
+<!-- <section class="grid grid-cols-8 font-semibold text-3xl"> -->
+<h3 class="font-semibold text-3xl text-center my-10">Listado de Propiedades</h3>
+
+<section class="max-w-[1280px] mx-auto">
+
+  <article class="grid grid-cols-flow gap-8 mx-4">
+
+    <div *ngFor="let house of houses"
+      class="bg-blue-100 rounded-lg overflow-hidden shadow-sm shadow-gray-600">
+      <!-- <img src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/home-improvement/wp-content/uploads/2022/07/download-23.jpg" alt="Foto de una casa"> -->
+      <map-mini-map [lngLat]="house.lngLat" />
+      <div class="px-4 py-5 space-y-1">
+        <h3 class="font-semibold text-xl">{{ house.title }}</h3>
+        <p>{{ house.description }}</p>
+      </div>
+    </div>
+  </article>
+
+</section>
